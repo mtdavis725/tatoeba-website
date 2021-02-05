@@ -1,4 +1,4 @@
-/*@import url(google font lato300)*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 :root {
     --primary-color: #047aeb;
@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     color: #333;
     line-height: 1.6;
 }
@@ -94,12 +94,12 @@ code, pre {
 }
 
 .showcase p {
-    margin: 20px o;
+    margin: 20px 0;
 }
 
 .showcase .grid {
     overflow: visible;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 55% auto;
     gap: 30px;
 }
 
@@ -332,28 +332,26 @@ code, pre {
         grid-column: 1;
     }
 
-
-.showcase {
+    .showcase {
     height: auto;
-}
+    }
 
-.showcase-text {
+    .showcase-text {
     text-align: center;
     margin-top: 40px;
     animation: slideInFromTop 1s ease-in;
-}
+    }
 
-.showcase-form {
+    .showcase-form {
     justify-self: center;
     margin: auto;
     animation: slideInFromBottom 1s ease-in;
-}
+    }
 
-.cli .grid > *:first-child {
+    .cli .grid > *:first-child {
     grid-column: 1;
     grid-row: 1;
-}
-
+    }
 }
 
 /* MOBILE */
@@ -371,24 +369,8 @@ code, pre {
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.1);
     }
-    
-}
 
-/* PLACEHOLDER */
-.cli .image-placeholder {
-    background-color: turquoise;
-    color: #fff;
-    height: 400px;
-    width: auto;
-}
-
-.cloud .image-placeholder {
-    background-color: #b4ecde;
-    color: #fff;
-    height: 200px;
-    width: auto;
-}
-
-.languages .image-placeholder {
-
+    .showcase-form {
+        width: 300px;
+      }
 }
